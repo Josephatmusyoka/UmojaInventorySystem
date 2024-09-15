@@ -1,0 +1,213 @@
+/* General Styles */
+body.dashboard-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Dashboard Overview */
+.dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.dashboard-overview .card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 23%;
+    text-align: center;
+}
+
+.dashboard-overview .card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.dashboard-overview .card p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #007bff;
+}
+
+/* Chart Section */
+.chart-section {
+    margin-bottom: 2rem;
+}
+
+.chart-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Recent Activity */
+.recent-activity {
+    margin-bottom: 2rem;
+}
+
+.recent-activity h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.recent-activity ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-activity ul li {
+    background: #fff;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Notifications */
+.notifications {
+    margin-bottom: 2rem;
+}
+
+.notifications h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.notifications #notificationList {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* User Statistics */
+.user-statistics {
+    margin-bottom: 2rem;
+}
+
+.user-statistics h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.user-statistics .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-statistics .stat {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+    text-align: center;
+}
+
+.user-statistics .stat h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.user-statistics .stat p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #007bff;
+}
+
+/* Recent Orders and Stock Levels */
+.recent-orders, .stock-levels {
+    margin-bottom: 2rem;
+}
+
+.recent-orders h2, .stock-levels h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.recent-orders table, .stock-levels table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-orders table th, .stock-levels table th, 
+.recent-orders table td, .stock-levels table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.recent-orders table th, .stock-levels table th {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

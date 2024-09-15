@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/dashboard.js" defer></script>
+</head>
+<body class="dashboard-page">
+    <header>
+        <div class="container">
+            <h1>Umoja Inventory Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/items">Items</a></li>
+                    <li><a href="/reports">Reports</a></li>
+                    <li><a href="/user_management">User Management</a></li>
+                    <li><a href="/transactions">Transactions</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Dashboard Overview Section -->
+            <section class="dashboard-overview">
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p id="totalSales">$0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">0</p>
+                </div>
+                <div class="card">
+                    <h3>Items in Stock</h3>
+                    <p id="itemsInStock">0</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Orders</h3>
+                    <p id="pendingOrders">0</p>
+                </div>
+            </section>
+
+            <!-- Sales Chart Section -->
+            <section class="chart-section">
+                <h2>Sales Overview</h2>
+                <canvas id="salesChart"></canvas>
+            </section>
+
+            <!-- Recent Activity Section -->
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <ul id="activityList">
+                    <!-- Activities will be dynamically inserted here -->
+                </ul>
+            </section>
+
+            <!-- Notifications Section -->
+            <section class="notifications">
+                <h2>Notifications</h2>
+                <div id="notificationList">
+                    <!-- Notifications will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- User Statistics Section -->
+            <section class="user-statistics">
+                <h2>User Statistics</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h4>Active Users</h4>
+                        <p id="activeUsers">0</p>
+                    </div>
+                    <div class="stat">
+                        <h4>Inactive Users</h4>
+                        <p id="inactiveUsers">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Orders Section -->
+            <section class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderList">
+                        <!-- Orders will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Stock Levels Section -->
+            <section class="stock-levels">
+                <h2>Stock Levels</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Stock Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stockList">
+                        <!-- Stock levels will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Umoja Inventory Management System</p>
+        </div>
+    </footer>
+</body>
+</html>

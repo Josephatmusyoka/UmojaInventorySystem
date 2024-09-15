@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Umoja Collections - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="#team">Meet Our Team</a></li>
+                <li><a href="#stakeholders">Our Stakeholders</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="container">
+        <h1 id="welcome-message">Welcome to Umoja Collections</h1>
+        <p>Your one-stop shop for managing inventory, transactions, and reports.</p>
+    </section>
+
+    <!-- Mission, Vision, Motto -->
+    <section id="about-us" class="container">
+        <h2>About Us</h2>
+        <div class="about-details">
+            <p><strong>Mission:</strong> To streamline inventory management processes for businesses of all sizes.</p>
+            <p><strong>Vision:</strong> To be the leading provider of inventory solutions across Africa.</p>
+            <p><strong>Motto:</strong> Simplifying your business, one transaction at a time.</p>
+        </div>
+    </section>
+
+    <!-- Location and Contacts -->
+    <section id="location-contacts" class="container">
+        <h2>Our Location & Contacts</h2>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+        <p><strong>Email:</strong> info@umojacollections.com</p>
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section id="team" class="container">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Team Member 1">
+            <h3>Jane Mwangi</h3>
+            <p>CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Team Member 2">
+            <h3>Mutua Musyoka</h3>
+            <p>CTO</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Team Member 3">
+            <h3>Wambui Njoroge</h3>
+            <p>COO</p>
+        </div>
+        <!-- More team members -->
+    </section>
+
+    <!-- Our Stakeholders -->
+    <section id="stakeholders" class="container">
+        <h2>Our Stakeholders</h2>
+        <ul>
+            <li>Kenya Revenue Authority</li>
+            <li>Safaricom</li>
+            <li>Equity Bank</li>
+            <li>KCB Group</li>
+            <!-- More stakeholders -->
+        </ul>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="container">
+        <h2>Categories</h2>
+        <table class="categories-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Electronics</td>
+                    <td>Phones, Laptops, Cameras</td>
+                </tr>
+                <tr>
+                    <td>Furniture</td>
+                    <td>Chairs, Tables, Sofas</td>
+                </tr>
+                <tr>
+                    <td>Office Supplies</td>
+                    <td>Stationery, Printers</td>
+                </tr>
+                <!-- More categories -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="POST" action="{{ url_for('contact') }}">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Umoja Collections. All Rights Reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>
